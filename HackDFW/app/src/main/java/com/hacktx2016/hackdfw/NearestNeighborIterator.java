@@ -1,8 +1,4 @@
-package ags.utils.dataStructures.trees.thirdGenKD;
-
-import ags.utils.dataStructures.BinaryHeap;
-import ags.utils.dataStructures.IntervalHeap;
-import ags.utils.dataStructures.MinHeap;
+package com.hacktx2016.hackdfw;
 
 import java.util.Arrays;
 import java.util.Iterator;
