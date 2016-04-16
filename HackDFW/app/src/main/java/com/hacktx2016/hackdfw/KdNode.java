@@ -1,4 +1,4 @@
-package ags.utils.dataStructures.trees.thirdGenKD;
+package com.hacktx2016.hackdfw;
 
 import java.util.Arrays;
 
@@ -160,7 +160,8 @@ class KdNode<T> {
         // Success
         return true;
     }
-
+    
+    @SuppressWarnings("unchecked")
     private void splitLeafNode() {
         right = new KdNode<T>(dimensions, bucketCapacity);
         left = new KdNode<T>(dimensions, bucketCapacity);

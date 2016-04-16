@@ -1,3 +1,5 @@
+package com.hacktx2016.hackdfw;
+
 public class Event {
     private String title;
     private String description;
