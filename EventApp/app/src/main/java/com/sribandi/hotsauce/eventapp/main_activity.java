@@ -19,7 +19,7 @@ import java.util.HashMap;
 public class main_activity extends AppCompatActivity {
 //    KdTree<Event> db;
     HashMap<Pair<Integer, Integer>, ArrayList<Event>> db;
-//    private final int ROUNDING = 100;
+    private final int ROUNDING = 100;
 //    TreeManager db;
     Button search;
     EditText latEdit;
@@ -70,7 +70,7 @@ public class main_activity extends AppCompatActivity {
                 //Event entry = new Event(title, description, rating, longitude, latitude);
 //                db.addEvent(latitude, longitude, title, description, rating);
                 //add_entry(entry);
-
+            }
         }
     }
 

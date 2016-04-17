@@ -36,10 +36,9 @@ public class AddEventBackEnd extends AppCompatActivity {
         Intent resultIntent = new Intent(this, main_activity.class);
         resultIntent.putExtra("Title", title);
         resultIntent.putExtra("Description", description);
-        resultIntent.putExtra("Longtitude", longitude);
-        resultIntent.putExtra("Latititude", latitude);
+        resultIntent.putExtra("Longitude", longitude);
+        resultIntent.putExtra("Latitude", latitude);
         resultIntent.putExtra("Rating", rating);
-
 
         setResult(RESULT_OK, resultIntent);
         finish();
