@@ -56,12 +56,12 @@
         "source": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_screen_toolbar.xml"
-    },
-    {
         "merged": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
         "source": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
