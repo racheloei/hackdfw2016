@@ -2,7 +2,6 @@ package com.hacktx2016.hackdfw;
 
 import android.support.v7.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.Toolbar;
@@ -10,12 +9,12 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
-
+import android.util.Log;
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doing_things);
+        setContentView(R.layout.main_header);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -23,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
         pack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(getApplicationContext(), AddEventBackEnd.class );
+                Intent myIntent = new Intent(getApplicationContext(), AddEventBackEnd.class);
                 startActivity(myIntent);
+
             }
         });
     }
