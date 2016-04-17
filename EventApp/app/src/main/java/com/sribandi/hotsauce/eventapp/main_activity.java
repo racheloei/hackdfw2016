@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.content.Intent;
 
 
-public class DoingThings extends AppCompatActivity {
+public class main_activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +24,23 @@ public class DoingThings extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(getApplicationContext(), AddEventBackEnd.class );
-                startActivity(myIntent);
+                startActivityForResult(myIntent, 1331);
             }
         });
+    }
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch(requestCode) {
+            case (1331) : {
+                if (resultCode == main_activity.RESULT_OK) {
+                    String title = data.getDataString();
+
+                        //BASICALLY SEND "newText" into "addEvent" which is in TreeManager.java
+                    }
+                break;
+            }
+        }
     }
 
     @Override

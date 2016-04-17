@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.sribandi.hotsauce.eventapp.DoingThings"
+            android:name="com.sribandi.hotsauce.eventapp.main_activity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>

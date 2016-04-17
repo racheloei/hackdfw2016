@@ -1,8 +1,14 @@
 package com.sribandi.hotsauce.eventapp;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.content.Intent;
+import android.widget.EditText;
 
 
 /**
@@ -15,10 +21,21 @@ public class AddEventBackEnd extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_event);
+
+
     }
 
 
     public void buttonClicked(View v) {
+        EditText titleEdit = (EditText) findViewById(R.id.titleID);
+        String str = titleEdit.getText().toString();
+        EditText desEdit = (EditText) findViewById(R.id.desID);
+        String str2 = desEdit.getText().toString();
+
+        Intent resultIntent = new Intent(AddEventBackEnd.this, main_activity.class);
+        resultIntent.putExtra(str, 1331);
+        resultIntent.putExtra(str2, 1331);
+
         finish();
     }
 }
