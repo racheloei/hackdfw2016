@@ -5,17 +5,25 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class main_activity extends AppCompatActivity {
 //    KdTree<Event> db;
-//    HashMap<Pair<Integer, Integer>, ArrayList<Event>> db;
+    HashMap<Pair<Integer, Integer>, ArrayList<Event>> db;
 //    private final int ROUNDING = 100;
-    TreeManager db;
-
+//    TreeManager db;
+    Button search;
+    EditText latEdit;
+    EditText longEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +33,8 @@ public class main_activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 //        db = new KdTree<Event>(360, 360);
-//        db = new HashMap<Pair<Integer, Integer>, ArrayList<Event>> ();
-        db = new TreeManager();
+        db = new HashMap<Pair<Integer, Integer>, ArrayList<Event>> ();
+//        db = new TreeManager();
 
         FloatingActionButton pack = (FloatingActionButton) findViewById(R.id.pack);
         pack.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +44,11 @@ public class main_activity extends AppCompatActivity {
                 startActivityForResult(myIntent, 1);
             }
         });
+
+        search = (Button) findViewById(R.id.search);
+        latEdit = (EditText) findViewById(R.id.latitude);
+        longEdit = (EditText)findViewById(R.id.longitude);
+
     }
 
     @Override
@@ -57,27 +70,34 @@ public class main_activity extends AppCompatActivity {
                 //Event entry = new Event(title, description, rating, longitude, latitude);
 //                db.addEvent(latitude, longitude, title, description, rating);
                 //add_entry(entry);
+
             }
         }
     }
 
+    // onclick listener for search button
+    public void find (View v){
+        //NEED TO IMPLEMENT THIS :o
+
+    }
 
 
-//    // Helper function that updates the event entry to the database.
-//    private void add_entry (Event entry) {
-//        // cute off the last 2 digits. Flexible for general location.
-//        int rounded_longitude = (int) entry.getLongitude()*ROUNDING;
-//        int rounded_latitude = (int) entry.getLatitude()*ROUNDING;
-//        Pair<Integer, Integer> pair = new Pair<Integer, Integer>(rounded_longitude, rounded_latitude);
-//        if (db.containsKey(pair))
-//            db.get(pair).add(entry);
-//        else
-//        {
-//            ArrayList<Event> events = new ArrayList<Event>();
-//            events.add(entry);
-//            db.put(pair, events);
-//        }
-//    }
+
+    // Helper function that updates the event entry to the database.
+    private void add_entry (Event entry) {
+        // cute off the last 2 digits. Flexible for general location.
+        int rounded_longitude = (int) entry.getLongitude()*ROUNDING;
+        int rounded_latitude = (int) entry.getLatitude()*ROUNDING;
+        Pair<Integer, Integer> pair = new Pair<Integer, Integer>(rounded_longitude, rounded_latitude);
+        if (db.containsKey(pair))
+            db.get(pair).add(entry);
+        else
+        {
+            ArrayList<Event> events = new ArrayList<Event>();
+            events.add(entry);
+            db.put(pair, events);
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
