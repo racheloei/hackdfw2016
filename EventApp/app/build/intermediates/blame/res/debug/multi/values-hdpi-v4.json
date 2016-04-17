@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/hotsauce/Desktop/Programming/AndroidStuff/EventApp/app/build/intermediates/res/merged/debug/values-hdpi-v4/values-hdpi-v4.xml",
+        "outputFile": "C:\\Users\\Qian\\Dropbox\\Backup\\Jack's stuff\\Computering\\hackdfw2016\\EventApp\\app\\build\\intermediates\\res\\merged\\debug\\values-hdpi-v4\\values-hdpi-v4.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,33 @@
                     "endOffset": 327
                 },
                 "from": {
-                    "file": "/home/hotsauce/Desktop/Programming/AndroidStuff/EventApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "file": "C:\\Users\\Qian\\Dropbox\\Backup\\Jack's stuff\\Computering\\hackdfw2016\\EventApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 6,
+                        "endColumn": 13,
+                        "endOffset": 327
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\home\\hotsauce\\Desktop\\Programming\\AndroidStuff\\EventApp\\app\\build\\intermediates\\res\\merged\\debug\\values-hdpi-v4\\values-hdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 6,
+                    "endColumn": 13,
+                    "endOffset": 327
+                },
+                "from": {
+                    "file": "C:\\home\\hotsauce\\Desktop\\Programming\\AndroidStuff\\EventApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

@@ -28,6 +28,7 @@ public class main_activity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -36,8 +37,8 @@ public class main_activity extends AppCompatActivity {
                 if (resultCode == main_activity.RESULT_OK) {
                     String title = data.getDataString();
 
-                        //BASICALLY SEND "newText" into "addEvent" which is in TreeManager.java
-                    }
+                    //BASICALLY SEND "newText" into "addEvent" which is in TreeManager.java
+                }
                 break;
             }
         }

@@ -1,4 +1,4 @@
-package com.hacktx2016.hackdfw;
+package com.sribandi.hotsauce.eventapp;
 
 public class Event {
     private String title;

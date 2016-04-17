@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/home/hotsauce/Desktop/Programming/AndroidStuff/EventApp/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
-        "source": "/home/hotsauce/Desktop/Programming/AndroidStuff/EventApp/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\home\\hotsauce\\Desktop\\Programming\\AndroidStuff\\EventApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\home\\hotsauce\\Desktop\\Programming\\AndroidStuff\\EventApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Qian\\Dropbox\\Backup\\Jack's stuff\\Computering\\hackdfw2016\\EventApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Qian\\Dropbox\\Backup\\Jack's stuff\\Computering\\hackdfw2016\\EventApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]
