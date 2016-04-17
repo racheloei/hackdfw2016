@@ -12,13 +12,14 @@
     android:id="@+id/eventaddid">
 
     <TextView
-        android:text="Add Event"
+        android:padding="25dp"
+        android:text="           Add Event"
         android:textSize="32dip"
 
         android:layout_columnSpan="4"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:layout_width="181dp"
+        android:layout_width="wrap_content"
         android:layout_row="0"
         android:layout_column="0" />
 
