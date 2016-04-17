@@ -8,9 +8,17 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
+import android.util.Pair;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class main_activity extends AppCompatActivity {
+//    KdTree<Event> db;
+    HashMap<Pair<Integer, Integer>, ArrayList<Event>> db;
+    private final int ROUNDING = 100;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,28 +27,54 @@ public class main_activity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+//        db = new KdTree<Event>(360, 360);
+        db = new HashMap<Pair<Integer, Integer>, ArrayList<Event>> ();
+
         FloatingActionButton pack = (FloatingActionButton) findViewById(R.id.pack);
         pack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(getApplicationContext(), AddEventBackEnd.class );
-                startActivityForResult(myIntent, 1331);
+                startActivityForResult(myIntent, 1);
             }
         });
     }
 
     @Override
+    /* Get info about one event, create a event object and add it to the kdTree. */
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        switch(requestCode) {
-            case (1331) : {
-                if (resultCode == main_activity.RESULT_OK) {
-                    String title = data.getDataString();
+        if (requestCode == 1) {
+            if(resultCode == RESULT_OK) {
+                String title = data.getStringExtra("Title");
+                String description = data.getStringExtra("Description");
+                Double longitude = data.getDoubleExtra("Longitude", -1);
+                Double latitude = data.getDoubleExtra("Latitude", -1);
+                int rating = data.getIntExtra("Rating", -1);
+                if (longitude == -1 || latitude == -1)
+                    throw new IllegalStateException("Invalid latitude or longitude");
+                if (rating < 0)
+                    throw new IllegalStateException("Invalid rating");
 
-                    //BASICALLY SEND "newText" into "addEvent" which is in TreeManager.java
-                }
-                break;
+                Event entry = new Event(title, description, rating, longitude, latitude);
+                add_entry(entry);
             }
+        }
+    }
+
+    // Helper function that updates the event entry to the database.
+    private void add_entry (Event entry) {
+        // cute off the last 2 digits. Flexible for general location.
+        int rounded_longitude = (int) entry.getLongitude()*ROUNDING;
+        int rounded_latitude = (int) entry.getLatitude()*ROUNDING;
+        Pair<Integer, Integer> pair = new Pair<Integer, Integer>(rounded_longitude, rounded_latitude);
+        if (db.containsKey(pair))
+            db.get(pair).add(entry);
+        else
+        {
+            ArrayList<Event> events = new ArrayList<Event>();
+            events.add(entry);
+            db.put(pair, events);
         }
     }
 

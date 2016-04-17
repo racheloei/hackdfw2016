@@ -1,15 +1,11 @@
 package com.sribandi.hotsauce.eventapp;
 
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.EditText;
-
+import android.widget.RatingBar;
 
 /**
  * Created by hotsauce on 4/16/16.
@@ -22,7 +18,6 @@ public class AddEventBackEnd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_event);
 
-
     }
 
 
@@ -31,10 +26,19 @@ public class AddEventBackEnd extends AppCompatActivity {
         String title = titleEdit.getText().toString();
         EditText desEdit = (EditText) findViewById(R.id.desID);
         String description = desEdit.getText().toString();
+        EditText longEdit = (EditText) findViewById(R.id.longtitude);
+        Double longtitude = Double.parseDouble(longEdit.getText().toString());
+        EditText latEdit = (EditText) findViewById(R.id.latitude);
+        Double latitude = Double.parseDouble(latEdit.getText().toString());
+        RatingBar rb = (RatingBar) findViewById(R.id.ratingBar);
+        int rating = Math.round(rb.getRating());
 
         Intent resultIntent = new Intent(this, main_activity.class);
         resultIntent.putExtra("Title", title);
         resultIntent.putExtra("Description", description);
+        resultIntent.putExtra("Longtitude", longtitude);
+        resultIntent.putExtra("Latititude", latitude);
+        resultIntent.putExtra("Rating", rating);
 
 
         setResult(RESULT_OK, resultIntent);

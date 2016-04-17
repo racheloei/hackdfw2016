@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Qian\\Dropbox\\Backup\\Jack's stuff\\Computering\\hackdfw2016\\EventApp\\app\\build\\intermediates\\res\\merged\\debug\\values-w500dp-v13\\values-w500dp-v13.xml",
+        "outputFile": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/res/merged/debug/values-w500dp-v13/values-w500dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,31 +11,7 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "C:\\Users\\Qian\\Dropbox\\Backup\\Jack's stuff\\Computering\\hackdfw2016\\EventApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\values-w500dp-v13\\values-w500dp-v13.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 54,
-                        "endOffset": 105
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\home\\hotsauce\\Desktop\\Programming\\AndroidStuff\\EventApp\\app\\build\\intermediates\\res\\merged\\debug\\values-w500dp-v13\\values-w500dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 54,
-                    "endOffset": 105
-                },
-                "from": {
-                    "file": "C:\\home\\hotsauce\\Desktop\\Programming\\AndroidStuff\\EventApp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\values-w500dp-v13\\values-w500dp-v13.xml",
+                    "file": "/Users/jialinli/Documents/hackdfw2016/EventApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/res/values-w500dp-v13/values-w500dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

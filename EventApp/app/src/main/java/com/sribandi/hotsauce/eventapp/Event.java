@@ -4,11 +4,15 @@ public class Event {
     private String title;
     private String description;
     private int rating;
+    private double longitude;
+    private double latitude;
     
-    public Event(String t, String d, int r) {
+    public Event(String t, String d, int r, double lo, double la) {
         title = t;
         description = d;
         rating = r;
+        longitude = lo;
+        latitude = la;
     }
     
     public String toString() {
@@ -26,4 +30,8 @@ public class Event {
     public int getRating() {
         return rating;
     }
+
+    public double getLongitude() {return longitude;}
+
+    public double getLatitude() {return latitude;}
 }
