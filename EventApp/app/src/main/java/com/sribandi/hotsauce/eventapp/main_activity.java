@@ -55,7 +55,7 @@ public class main_activity extends AppCompatActivity {
                     throw new IllegalStateException("Invalid rating");
 
                 //Event entry = new Event(title, description, rating, longitude, latitude);
-                db.addEvent(latitude, longitude, title, description, rating);
+//                db.addEvent(latitude, longitude, title, description, rating);
                 //add_entry(entry);
             }
         }

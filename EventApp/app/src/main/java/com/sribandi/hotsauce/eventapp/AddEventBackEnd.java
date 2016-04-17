@@ -27,7 +27,7 @@ public class AddEventBackEnd extends AppCompatActivity {
         EditText desEdit = (EditText) findViewById(R.id.desID);
         String description = desEdit.getText().toString();
         EditText longEdit = (EditText) findViewById(R.id.longitude);
-        Double longtitude = Double.parseDouble(longEdit.getText().toString());
+        Double longitude = Double.parseDouble(longEdit.getText().toString());
         EditText latEdit = (EditText) findViewById(R.id.latitude);
         Double latitude = Double.parseDouble(latEdit.getText().toString());
         RatingBar rb = (RatingBar) findViewById(R.id.ratingBar);
@@ -36,7 +36,7 @@ public class AddEventBackEnd extends AppCompatActivity {
         Intent resultIntent = new Intent(this, main_activity.class);
         resultIntent.putExtra("Title", title);
         resultIntent.putExtra("Description", description);
-        resultIntent.putExtra("Longtitude", longtitude);
+        resultIntent.putExtra("Longtitude", longitude);
         resultIntent.putExtra("Latititude", latitude);
         resultIntent.putExtra("Rating", rating);
 

@@ -11,7 +11,7 @@ public class TreeManager {
 	}
 
 	void addEvent(double latitude, double longitude, String title, String description, int rating) {
-		double[] point = { latitude, longitude };
+		double[] point = { longitude, latitude };
 		Event event = new Event(title, description, rating, longitude, latitude);
 		tree.addPoint(point, event);
 	}

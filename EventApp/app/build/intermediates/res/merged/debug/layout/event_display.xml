@@ -8,44 +8,87 @@
     tools:context=".main_activity"
     tools:showIn="@layout/main_header">
 
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="35dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
     <TextView
         android:id="@+id/prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
+        android:textSize="20dp"
         android:layout_gravity="center_horizontal"
-        android:text="
+        android:text="Input your longitude and Latitude                 to find events close to you! "/>
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
 
-        Input your longitude and Latitude
-         to find events close to you! "/>
+    <TextView
+        android:id="@+id/loprompt"
+        android:layout_below="@id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Longitude"
+        android:textStyle="bold"/>
+
 
     <EditText
         android:id="@+id/longitude"
         android:ems="10"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_below= "@id/prompt"
+        android:layout_below= "@id/loprompt"
         android:inputType="numberDecimal"
         android:hint="4 past decimal points "/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/laprompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Latitude"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/latitude"
         android:ems="10"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_below= "@id/longitude"
+        android:layout_below= "@id/laprompt"
         android:paddingLeft="10dp"
         android:inputType="numberDecimal"
         android:hint="4 past decimal points "/>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:onClick="find"
+        android:text="search"/>
 
 
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:ems="15"
-    android:layout_gravity="center"
-    android:text="Input your longitude and Latitude                 to find events close to you! "/>
 
+
+
+    </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
