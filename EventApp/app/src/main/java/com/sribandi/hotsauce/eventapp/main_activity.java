@@ -76,21 +76,9 @@ public class main_activity extends AppCompatActivity {
 
     // onclick listener for search button
     public void find (View v){
-        //NEED TO IMPLEMENT THIS :o
-<<<<<<< HEAD
-
+        //NEED TO IMPLEMENT THIS
     }
 
-=======
->>>>>>> 4416524f191bbf9990dad9d57a499e771a060e6d
-
-    }
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 4416524f191bbf9990dad9d57a499e771a060e6d
     // Helper function that updates the event entry to the database.
     private void add_entry (Event entry) {
         // cute off the last 2 digits. Flexible for general location.
