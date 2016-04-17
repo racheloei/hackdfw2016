@@ -9,10 +9,43 @@
     tools:showIn="@layout/main_header">
 
     <TextView
+        android:id="@+id/prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working.I Think its working."
-        />
+        android:ems="15"
+        android:layout_gravity="center_horizontal"
+        android:text="
+
+
+        Input your longitude and Latitude
+         to find events close to you! "/>
+
+    <EditText
+        android:id="@+id/longitude"
+        android:ems="10"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below= "@id/prompt"
+        android:inputType="numberDecimal"
+        android:hint="4 past decimal points "/>
+
+    <EditText
+        android:id="@+id/latitude"
+        android:ems="10"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below= "@id/longitude"
+        android:paddingLeft="10dp"
+        android:inputType="numberDecimal"
+        android:hint="4 past decimal points "/>
+
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="15"
+    android:layout_gravity="center"
+    android:text="Input your longitude and Latitude                 to find events close to you! "/>
 
 </android.support.v4.widget.NestedScrollView>

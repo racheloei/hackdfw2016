@@ -34,7 +34,6 @@
 
     <include layout="@layout/event_display" />
 
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/pack"
         android:layout_width="wrap_content"
@@ -42,5 +41,11 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_input_add"
         app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="top|end" />
+        app:layout_anchorGravity="bottom|end" />
+
+
+
+
+
+
 </android.support.design.widget.CoordinatorLayout>

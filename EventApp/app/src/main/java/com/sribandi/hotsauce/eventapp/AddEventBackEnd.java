@@ -26,7 +26,7 @@ public class AddEventBackEnd extends AppCompatActivity {
         String title = titleEdit.getText().toString();
         EditText desEdit = (EditText) findViewById(R.id.desID);
         String description = desEdit.getText().toString();
-        EditText longEdit = (EditText) findViewById(R.id.longtitude);
+        EditText longEdit = (EditText) findViewById(R.id.longitude);
         Double longtitude = Double.parseDouble(longEdit.getText().toString());
         EditText latEdit = (EditText) findViewById(R.id.latitude);
         Double latitude = Double.parseDouble(latEdit.getText().toString());
