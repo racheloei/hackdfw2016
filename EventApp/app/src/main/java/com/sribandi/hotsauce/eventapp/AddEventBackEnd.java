@@ -32,10 +32,13 @@ public class AddEventBackEnd extends AppCompatActivity {
         EditText desEdit = (EditText) findViewById(R.id.desID);
         String description = desEdit.getText().toString();
 
-        Intent resultIntent = new Intent(AddEventBackEnd.this, main_activity.class);
-        resultIntent.putExtra(title, 1331);
-        resultIntent.putExtra(description, 1331);
+        Intent resultIntent = new Intent(this, main_activity.class);
+        resultIntent.putExtra("Title", title);
+        resultIntent.putExtra("Description", description);
 
+
+        setResult(RESULT_OK, resultIntent);
         finish();
     }
+
 }
